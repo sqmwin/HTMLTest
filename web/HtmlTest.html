@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" >
+    <meta content="text/html">
+    <meta charset="UTF-8">
+    <title>这是超文本标记语言</title>
+</head>
+<body>
+<!--换行标记-->
+<br/>
+<h3>一、排版标签</h3><hr/>
+<!-- 这是注释 -->
+<hr color="#fabfcf" width="50%" align="center"/>
+<!--水平线标记-->
+<hr color="883c6f" width="500px" align="left"/>
+
+<!-- 段落标签 -->
+<p align="center">
+    p--段落标签,在开始和结束为止各留一个空行<br/>
+    段落&nbsp;&nbsp;标签&nbsp;&nbsp;
+</p>
+
+<div>
+    div--声明区域 ，放入其他文字、子标签，标签换行
+</div>
+
+<span>
+    span--声明区域，标签不换行，行内元素，例：
+    <font color="#ff4500">用户名已存在</font>
+</span><br/>
+
+<h3>二、字体标签</h3><hr/>
+<font color="orange"  face="微软雅黑" >font--color--size--face--...</font><br/>
+<font color="orange" size="-1" face="微软雅黑" >font的size最小值是1，最大值是7，默认值是3，可+-（在默认值的基础上）</font><br/>
+
+<h1>h1--我是一级标题--h1最大,正好与size相反</h1>
+<h3>h3--我是三级标题</h3>
+<h6>h6--我是六级标题--h6最小</h6>
+
+<b>b--粗体</b><i> i--斜体</i>
+<b><i> 粗体斜体嵌套</i></b>
+<font color="#006400" size="5" face="楷体"><b><i>字体粗体斜体嵌套</i></b></font><br />
+特殊字符：转义&lt;(左尖括号& lt)&gt;(右尖括号& gt)&amp;(与号& amp)&nbsp;(空格是& nbsp)
+
+<h3>三、列表标签</h3><hr/>
+<h4>数据格式化列表</h4>
+<dl>
+    <dt>dl-- 定义一个清单(会自动换行) dt--上层数据(定义条目,这一行是dt)</dt>
+    <dd>dd--下层数据(定义内容,这一行是dd)，都是自动对齐，自动缩进</dd>
+    <dd>dd--下层数据(定义内容)，都是自动对齐，自动缩进</dd>
+    <dd>dd--下层数据(定义内容)，都是自动对齐，自动缩进</dd>
+    <dd>dd--下层数据(定义内容)，都是自动对齐，自动缩进</dd>
+</dl>
+
+<ol>
+    <li>ol--有序列表，会自动换行</li>
+    <li>li--封装每一项</li>
+</ol>
+<ol type="A" start="3">
+    <li>ol--type"A"的属性改变标号类型</li>
+    <li>ol--strat"3"的属性改变从第几个标号开始</li>
+</ol>
+<ul type="circle">
+    <li>ul--无序列表，li--封装每一项</li>
+    <li>无序列表用得最多</li>
+    <li>ul--type"?"的属性改变标号类型"?"可以为:</li>
+    <li>circle(空心圆）\square（实心方块）\disc（实心圆）</li>
+</ul><br/>
+
+<h3>四、图片标签</h3><hr/>
+<img src="../imgs/1.png" width="160" height="100" alt="墙纸"/><br/>
+<font color="black" size="+1" >img src="../imgs/1.jpg"--图片地址 width="160"或者"10%" height="..." alt--图片说明文字</font>
+<marquee><img src="../imgs/1.png" width="8%" height="5%" alt="可动的嵌套" /> </marquee>
+
+<h3>四、超链接标签</h3><hr/>
+<a href="HtmlTest2.html"><font size="+2" face="微软雅黑">第二页</font> </a>
+</body>
+</html>
