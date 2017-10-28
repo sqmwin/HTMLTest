@@ -5,9 +5,78 @@
 <title>这是超文本标记语言-4</title>
 </head>
 <body>
+<a name="top"></a>
 <h3>六、表单标签</h3><hr/>
+收集用户输入的数据<br/>
+form--表单的标签,声明表单的范围.<br/>
+    form action="url"--提交表单的路径<br>
+    form method="get"--form表单的提交方式(默认get) <br>
+        "get"--提交后把参数列表显示在地址栏,网站安全级别较低,post不会 <br>
+        "post"--是请求体,支持大数据,安全级别高 <br>
+        推荐使用post方式 <br> <br>
+    input type=""<br/><br>
+        "text"--文本框;name--给后台提供方法直接获取值<br/>
+            name必须指定<br/><br>
+        "password"--密码框<br/>
+            name必须指定<br><br>
+        "radio"--单选按钮<br>
+            name--组,值要相同单选框才能单选<br>
+            checked="checked"或者"true"--默认被选中<br>
+            value=""值,给后台提供选择<br>
+                name\value必须指定<br><br>
+        "checkbox"--多选按钮<br>
+            checked="checked"或"true"--默认被选中<br>
+                name\val必须指定<br><br>
+        "reset"--重置恢复到表单最初状态<br><br>
+        "submit"--提交表单;点击提交后地址栏发生变化(?sex=on&hobby=on)<br>
+                ?username=12312&password=123123&sex=on&hobby=on&hobby=on&hobby=on<br><br>
+        "file"--选择文件<br>
+            name必须指定<br><br>
+        "hidden"--隐藏组建,用于后台给值<br>
+            name\value指定<br><br>
+        "button"--按钮<br>
+            value="显示的文字"<br>
+            和js绑定事件<br><br>
+        "image"--图片<br>
+            提交的一种 引入外部的一个文件（图片）<br><br>
+    select name="city"--声明选择框<br> 
+        option value="beijing"--选单中的选项 selected--默认被选择的<br><br>
+    textarea 文本域<br>
+        rows--行数<br>
+        cols-列数<br>
+        name指定属性<br>
+        selected="nihao"--默认值<br>
 
-<a href="HtmlTest3.html">上一页</a>
+<br><br><br>
+<form>
+    姓名 <input type="text" name="username"/><br>
+    密码 <input type="password" name="password"> <br>
+    性别 <input type="radio" name="sex" value="man"> 男
+         <input type="radio" name="sex" value="woman" checked="checked"> 女 <br>
+    选择爱好 <input type="checkbox" name="hobby" value="basketball"> 篮球
+            <input type="checkbox" name="hobby" value="soccer"> 足球
+            <input type="checkbox" name="hobby" value="volleyball"> 排球
+            <input type="checkbox" name="hobby" value="run" checked="checked"> 跑步<br>
+    请选择上传文件<input type="file" name="upload"><br>
+    隐藏组件<input type="hidden" name="userId" value="001" /><br/>
+    选择城市: <select name="city" id="1">
+                <option value="beijing" selected>北京</option>
+                <option value="shanghai">上海</option>
+                <option value="guangzhou">广州</option>
+                <option value="shengzhen">深圳</option>
+            </select><br>
+    个人简介 <textarea name="intro" id="2" cols="30" rows="10"></textarea><br>
+
+    <input type="reset" value="重置数据">
+    <input type="submit" value="提交表单"><br>
+    <input type="image" src="../imgs/right.jpg">
+
+    
+
+</form>
+
+
+<a href="#top">返回顶部</a> <a href="HtmlTest3.html">上一页</a> <a href="HtmlTest5.html">下一页</a>
 
 </body>
 </html>
